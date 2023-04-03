@@ -1,0 +1,29 @@
+
+
+.end{
+padding-top: 20px;
+padding-left: 10%;
+display: flex;
+justify-items: left;
+}
+
+.text1{
+display: flex;
+margin-left: 0;
+color: hsl(0, 5%, 88%);
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight: 500;
+font-size: 18px;
+
+
+}
+.text1:hover{
+cursor: pointer;
+color: hsl(0, 83%, 45%);
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight: 500;
+-moz-text-size-adjust: 2px 4px 5px;
+text-shadow: 5px 6px 5px;
+font-size: 10px;
+transition: 0.7s ease-in-out;
+}

@@ -1,0 +1,47 @@
+.v-container{
+   
+    width: 350px;
+    height: 0px;
+    background-color: rgb(143, 76, 76);
+    border-radius: 8px;
+    box-shadow: 4px 4px 30px rgb(0, 0, 0.07);
+}
+
+.search-bar{
+    width: 350px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 4px;
+    display: flex;
+    flex: 1;
+}
+
+.vedios .vedio-details h2 {
+    font-size: 12px;
+}
+.vedios .vedio-details{
+    padding-left: 15px;
+}
+
+.vedios .vedio-details h3{
+    font-size: 8px;
+    color: rgb(27, 25, 25);
+}
+
+
+.vedios{
+    margin-top: 0px;
+    padding-top: 0px;
+display: flex;
+cursor: pointer;
+background-color: rgb(204, 200, 200);
+}
+
+.previews{
+    padding-top: none;
+    width:50px ;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: none;
+}

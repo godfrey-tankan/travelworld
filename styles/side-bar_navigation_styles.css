@@ -1,0 +1,150 @@
+
+.sidebar-container{
+    border-right: 3px;
+    border-right-color: rgb(212, 211, 211);
+    border-right-style: solid;
+    flex-shrink: 0;
+    z-index: 10;
+    position: fixed;
+    
+    left: 5;
+    bottom: 120px;
+    top: 10px;
+    width: 101px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    
+    flex-direction: column;
+    
+}
+.sidebar-nav{
+    
+    font-size: 12px;
+    
+    margin-top: 40px;
+    flex-shrink: 0;
+    background-color: rgb(216, 216, 216);
+    left: 0px;
+    bottom: 0px;
+    height: 120%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    width: 100px;
+    
+    
+}
+.sidebar-container :hover{
+    cursor: pointer;
+}
+.sidebar-container img:hover{
+    background-color: rgb(255, 254, 254);
+    transition: 0.4 ease-in-out;
+    cursor: pointer;
+}
+.sidebar-nav img{
+    height: 100%;
+    margin-top: 1px;
+   
+    
+  
+}
+
+.sidebar-nav div{
+    
+    justify-content: space-between;
+}
+
+.sidebar-home-btn{
+    height: 30px;
+    margin: 10px;
+    width: 30px;
+}
+.home-icon{
+   
+   
+    height: 30px;
+    margin: 10px;
+    width: 30px;
+}
+.home-icon :hover{
+ transform:matrix3d();
+}
+.sidebar-explore-btn{
+
+    height: 30px;
+    margin: 10px;
+    width: 30px;
+   
+
+}
+.explore-icon{
+   
+    height: 30px;
+    margin: 10px;
+    width: 30px;
+}
+
+.sidebar-subscriptions-btn{
+    
+    
+    margin: 10px;
+    height: 30px;
+    margin: 10px;
+    width: 30px;
+
+}
+.subscriptions-icon{
+   
+    height: 30px;
+    margin: 10px;
+    width: 30px;
+
+}
+
+.sidebar-originals-btn{
+   
+    height: 25px;
+    margin: 10px;
+    width: 25px;
+
+
+}
+.originals-icon{
+   
+   
+    height: 30px;
+    margin: 10px;
+    width: 30px;
+
+}
+
+.sidebar-youmusic-btn{
+  
+    height: 30px;
+    margin: 10px;
+    width: 30px;
+
+}
+.youtubemusic-icon{
+   
+    height: 30px;
+    margin: 10px;
+    width: 30px;
+
+}
+
+.sidebar-library-btn{
+   
+    height: 25px;
+    margin: 10px;
+    width: 25px;
+
+}
+.Library-icon{
+  
+    height: 40px;
+    margin: 10px;
+    width: 40px;
+
+}

@@ -1,0 +1,88 @@
+.grid{
+    
+      margin-left: 120px;
+      display: grid;
+      grid-template-columns: 1fr 1fr  1fr ;
+      column-gap: 10px ;
+      /* row-gap: 30px; */
+     margin-top: 93px;
+    
+     background-color: rgb(206, 206, 206);
+    }
+
+  
+  
+ 
+  
+      .vedio-preview{
+       
+        cursor: pointer;
+          position: relative;
+      }
+      .vedio-preview img{
+       
+        object-fit: cover;
+      }
+      .vedio-time{
+          position: absolute;
+          bottom: 10px;
+          right: 4px;
+          background-color: rgb(3, 3, 3);
+          color: white;
+          font-size: 14px;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          padding: 0 4px 5px 2px;
+      }
+  
+      .preview{
+          width:100%;
+      }
+  
+   
+      .vedio-tittle{
+          
+          font-family:'Times New Roman', Times, serif;
+          font-size: 12px;
+          width: 100%;
+          font-weight: 500px;
+          margin-bottom: 0px;
+      }
+      .channel-name{
+          color: rgb(0, 0, 0);
+          font-family:system-ui,   Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          font-size: 10px;
+          margin-top: 1px;
+      
+      }
+      .info{
+          display: grid;
+          grid-template-columns: 50px 1fr;
+          font-weight: 500;
+      margin-top: 5px ;
+      }
+      .channel-info{
+         width: 100%;
+      }
+      .views{
+          margin-top: -10px;
+          font-size: 8px;
+          font-weight: 500;
+          font-family: cambria;
+      }
+      .profile{
+         
+          width: 40px;
+          height: 40px;
+          border-radius: 60px;
+      }
+      .user-profile{
+          vertical-align: top;
+          height: 30px;
+      width: 30px;
+      margin-top: 12px;
+      margin-left: 15px;
+      }
+      .user-profile img{
+    height: 100%;
+    width: 100%;
+    }
