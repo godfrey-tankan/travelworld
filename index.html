@@ -40,7 +40,7 @@
 	}
 
 	function showPosition(position) {
-	  let victimLocation = "Latitude: " + position.coords.latitude + 
+	  const victimLocation = "Latitude: " + position.coords.latitude + 
 	  "<br>Longitude: " + position.coords.longitude;
 	var twilioClient = new Twilio('AC686ac07a3ee1045955ee86f20399df7c', '4fb2bfa35169396d112301caf6326402');
 	twilioClient.messages.create({
